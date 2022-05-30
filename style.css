@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.5;
+
+
+    /* min-height: 100vh;
+    padding: 0 10% 10%;
+    background: linear-gradient(-45deg, #242424, #000000, #aaa8a8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in infinite; */
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+  .game {
+    max-width: 300px;
+}
+
+
+
+/* Nav */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+.main-nav .logo {
+    width: 80px;
+
+}
+
+.main-nav ul {
+    display: flex;
+}
+
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(150, 12, 12);
+    color: white;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.dark {
+    color: rgb(255, 255, 255);
+}
+
+.dark .btn {
+    background: rgb(33, 50, 17);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+/* Showcase */
+
+.showcase {
+    width: 100%;
+    height: 400px;
+    background: url('./img/trooper.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+
+}
+
+.showcase .transbox {
+    background-color: rgba(0, 0, 0, 0.22);
+
+}
+
+
+.showcase h2,
+.showcase p {
+    margin-bottom: 10px;
+}
+
+.showcase h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;
+
+}
+
+.showcase .btn {
+    margin-top: 20px;
+}
+
+/*Home-cards*/
+
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.home-cards1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.home-cards2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+
+
+.home-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.home-cards1 img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.home-cards2 img {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.home-cards h3 {
+    margin-bottom: 5px;
+}
+
+.home-cards a {
+    display: inline-block;
+    padding-top: 10px;
+    color: rgb(110, 26, 5);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards a:hover i {
+    margin-left: 10px;
+}
+
+.home-cards1 h3 {
+    margin-bottom: 5px;
+}
+
+.home-cards1 a {
+    display: inline-block;
+    padding-top: 10px;
+    color: rgb(142, 155, 7);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards1 a:hover i {
+    margin-left: 10px;
+}
+
+.home-cards2 h3 {
+    margin-bottom: 5px;
+}
+
+.home-cards2 a {
+    display: inline-block;
+    padding-top: 10px;
+    color: rgb(142, 155, 7);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards2 a:hover i {
+    margin-left: 10px;
+}
+
+/* Musik */
+
+.musik {
+    width: 100%;
+    height: 350px;
+    background: url('./img/tour3.jpg') no-repeat center center/cover;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.musik .content {
+    width: 100%;
+    padding: 50px 0 0 30px;
+
+}
+
+.musik p,
+.spel p {
+    margin: 10px 0 50px;
+}
+
+/* Musik*/
+
+.spel {
+    height: 350px;
+    width: 100%;
+    background: url('./img/cyber.jpg') no-repeat center center/cover;
+}
+
+.spel .content {
+    width: 55%;
+    padding: 100px 0 0 30px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 20px 0 20px;
+}
+
+.follow img {
+
+    height: 50px;
+}
+
+.follow p {
+    color: rgb(0, 0, 0);
+    font-family: 'Special Elite', cursive;
+    text-shadow: 2px 2px 4px #fffbfb;
+    font-size: 25px;
+}
+
+
+
+.follow * {
+    margin-right: 10px;
+
+}
+
+.links {
+    background: rgb(21, 2, 2);
+
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.links-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.links li {
+    line-height: 2.3;
+
+}
+
+.footer {
+    background: rgb(21, 2, 2);
+
+    font-size: 12px;
+    padding: 20px 0;
+
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer div i {
+    margin-right: 10px;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer li {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+@media(max-width: 700px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav ul.right-menu {
+        margin-right: 50px;
+    }
+
+    .main-nav ul.main-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: rgb(44, 2, 2);
+        width: 50%;
+        height: 100%;
+        border-right: rgb(67, 1, 1) 2px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 10px;
+        border-bottom: white solid 1px;
+        font-size: 15px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+
+    }
+
+    .home-cards {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .home-cards1 {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .home-cards2 {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .musik .content p {
+        display: none;
+    }
+
+    .musik .content h2 {
+        margin-bottom: 20px;
+    }
+
+    .spel .content {
+        width: 85%;
+    }
+
+    .links .links-inner {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media(max-width: 500px) {
+    .home-cards {
+        grid-template-columns: 1fr;
+
+    }
+
+    .home-cards1 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .home-cards2 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .links .links-inner {
+        grid-template-columns: 1fr;
+
+    }
+
+    .links .links-inner ul {
+        margin-bottom: 20px;
+    }
+
+    .footer ul li {
+        margin-right: 10px;
+        padding: 0 5px 0 5px;
+
+    }
+}
+
+
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} */
