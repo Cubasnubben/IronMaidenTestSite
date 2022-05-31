@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" href="style.css">
+    <title>Musik</title>
+</head>
+<body>
+
+    <div class="menu-btn">
+    <i class="fas fa-bars fa 2x"></i>
+</div>
+
+    <div class="container">
+        <nav class="main-nav">
+          
+            <img src="img/EddieMaiden.png"  class="logo" alt="/index.html">
+
+            
+        
+
+            <ul class="main-menu ">
+                <li><a href="./index.html">Hem</a></li>
+                <li><a href="./album.html">Album</a></li>
+                <li><a href="music.html">Musik</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Battle</a></li>
+                <li><a href="#">Spel</a></li>
+            </ul>
+            <ul class="right-menu">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search" ></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <h1>MUSIC PLAYER</h1>
+
+
+   
+
+<div class="music-container ">
+    <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <audio src="music/Iron Maiden - Aces High.mp3" id="audio"></audio>
+    <audio src="music/Iron Maiden - Run To The Hills.mp3" id="audio"></audio>
+    <audio src="music/Iron Maiden - Seventh Son Of A Seventh Son.mp3" id="audio"></audio>
+    <audio src="music/Iron Maiden - The Trooper.mp3" id="audio"></audio>
+    <audio src="music/Iron Maiden - 2 Minutes To Midnight.mp3" id="audio"></audio>
+
+   
+
+
+
+    <div class="img-container">
+        <img src="images/Iron Maiden - 2 Minutes To Midnight.jpeg" alt="music-cover" id="cover" />
+    </div>
+
+    <div class="navigation">
+        <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+        </button>
+    </div>
+</div>
+
+ 
+
+    
+ 
+
+   
+
+<section class="follow">
+                <p>Iron Maiden Media</p>
+                <a href="https://facebook.com">
+                    <img src="img/FBIJ.png" alt="Facebook">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="img/inztaB.jpg" alt="Twitter">
+                </a>
+                <a href="https://linkedin.com">
+                    <img src="img/LINKZ.png" alt="LinkedIn">
+                </a>
+            </section>
+<footer class="footer">
+    <div class="footer-inner">
+        <div><i class="fas fa-globe fa-2x"></i> Swedish
+    </div>
+    <ul><li><a href="#"></a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Maiden-Fans</a></li>
+     
+        <li><a href="#">&copy; Iron Maiden 2022</a></li>
+
+    </ul>
+</footer>
+
+
+<script>
+    document.querySelector('.menu-btn').addEventListener
+    ('click', () => document.querySelector('.main-menu')
+    .classList.toggle('show'));
+</script>
+
+    <script src="music.js"></script>
+    
+</body>
+</html>

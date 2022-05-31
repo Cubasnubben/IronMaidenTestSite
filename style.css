@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -38,7 +38,7 @@ ul {
     margin: auto;
 }
 
-  .game {
+.game {
     max-width: 300px;
 }
 
@@ -153,6 +153,29 @@ ul {
     margin-top: 20px;
 }
 
+.showcase-shop {
+    width: 100%;
+    height: 400px;
+    background: url('./shop-img/IronEddieFront1.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+    margin-bottom: 20px;
+}
+
+.transbox-shop {
+    font-size: 40px;
+    font-family: 'Special Elite', cursive;
+    color: rgb(255, 255, 5);
+
+}
+
+
+
 /*Home-cards*/
 
 .home-cards {
@@ -221,7 +244,7 @@ ul {
 .home-cards1 a {
     display: inline-block;
     padding-top: 10px;
-    color: rgb(142, 155, 7);
+    color: rgb(234, 255, 0);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -234,13 +257,7 @@ ul {
     margin-bottom: 5px;
 }
 
-.home-cards2 a {
-    display: inline-block;
-    padding-top: 10px;
-    color: rgb(142, 155, 7);
-    text-transform: uppercase;
-    font-weight: bold;
-}
+ 
 
 .home-cards2 a:hover i {
     margin-left: 10px;
@@ -497,3 +514,154 @@ ul {
         background-position: 0% 50%;
     }
 } */
+
+
+.music-container {
+    background: linear-gradient(86deg, rgba(3, 3, 3, 1) 0%, rgba(34, 33, 33, 1) 22%,
+            rgba(42, 5, 5, 1) 46%, rgba(24, 23, 23, 1) 74%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 black;
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0px;
+    z-index: 10;
+
+
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+
+
+.img-container img {
+    width: inherit;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 8s linear infinite;
+
+    animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+
+    border: 0;
+    color: #dfdbdf;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+    background: transparent;
+}
+
+.action-btn-big {
+    color: #cdc2d0;
+    font-size: 30px;
+    background: transparent;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.music-info {
+    background-color: #2d0202cd;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.music-info h4 {
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+
+
+.music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.progress-container {
+    background: rgb(43, 43, 43);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    background: linear-gradient(86deg, rgba(0, 0, 0, 1) 0%, rgba(26, 37, 32, 1) 22%, rgba(43, 64, 58, 1) 46%,
+            rgba(40, 117, 97, 1) 74%, rgba(5, 177, 132, 1) 100%);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    margin-top: 40px;
+    color: rgb(26, 138, 118);
+}
+
+@keyframes header {
+    0% {
+        top: -100px
+    }
+
+    100% {
+        top: 0
+    }
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+
+}
