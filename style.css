@@ -280,6 +280,18 @@ p {
     font-weight: bold;
 }
 
+.home-cards3 a {
+    display: inline-block;
+    padding-top: 10px;
+    color: rgb(234, 255, 0);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home-cards3 a:hover i {
+    margin-left: 10px;
+}
+
 .home-cards1 a:hover i {
     margin-left: 10px;
 }
@@ -492,6 +504,12 @@ p {
 
     }
 
+    .home-cards3 {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
     .musik .content p {
         display: none;
     }
@@ -505,7 +523,7 @@ p {
     }
 
     .links .links-inner {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
 
     }
 }
@@ -526,6 +544,12 @@ p {
 
     }
 
+    .home-cards3 {
+
+        grid-template-columns: 1fr;
+
+    }
+
     .links .links-inner {
         grid-template-columns: 1fr;
 
@@ -539,6 +563,14 @@ p {
         margin-right: 10px;
         padding: 0 5px 0 5px;
 
+    }
+
+    .transbox-shop {
+        
+        font-family: 'Special Elite', cursive;
+        color: rgb(255, 255, 5);
+       height: 1px;
+     
     }
 }
 
